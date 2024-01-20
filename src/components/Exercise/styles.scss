@@ -1,0 +1,34 @@
+.exercise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  &__name {
+    width: 172px;
+    height: 172px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    transition: all 0.3s;
+    border-radius: 10px;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+
+    &:active {
+      border: 1px solid #000;
+    }
+  }
+}
